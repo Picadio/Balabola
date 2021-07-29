@@ -1,5 +1,5 @@
 from selenium import webdriver
-
+import time
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver import ActionChains
 from bs4 import BeautifulSoup
@@ -15,8 +15,7 @@ login = driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[3]/span/span
 
 button = driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/button')
 driver.execute_script("arguments[0].click();", button)
-button = driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/button')
-driver.execute_script("arguments[0].click();", button)
+time.sleep(5)
 
 soup = BeautifulSoup(driver.page_source, 'lxml')
 print(soup.span)
