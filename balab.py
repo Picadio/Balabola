@@ -3,7 +3,7 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver import ActionChains
 from bs4 import BeautifulSoup
-
+from webdriver_manager.utils import ChromeType
 
 driver = webdriver.Chrome(ChromeDriverManager(chrome_type=ChromeType.GOOGLE).install())
 
