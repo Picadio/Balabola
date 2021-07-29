@@ -18,5 +18,6 @@ driver.execute_script("arguments[0].click();", button)
 time.sleep(30)
 
 soup = BeautifulSoup(driver.page_source, 'lxml')
-print(soup.span)
+quotes = soup.find_all('span', class_='response__wrapper')
+print(quotes)
 
