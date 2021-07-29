@@ -1,4 +1,4 @@
 selenium
-webdriver_manager
+webdriver_manager.chrome
 bs4
-chromedriver_installer
+
