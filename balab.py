@@ -5,7 +5,7 @@ from selenium.webdriver import ActionChains
 from bs4 import BeautifulSoup
 from webdriver_manager.utils import ChromeType
 
-driver = webdriver.Firefox()
+driver = webdriver.PhantomJS()
 
 driver.get('https://yandex.ru/lab/yalm')
 
