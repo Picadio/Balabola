@@ -11,7 +11,7 @@ driver.get('https://yandex.ru/lab/yalm/share?id=b83977ab74487940e96ed1656188d484
 
 cl = driver.find_element_by_xpath('//*[@id="app"]/div/div/button').click()
 
-login = driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[3]/span/span[2]/textarea').send_keys("Привет как дела")
+login = driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[3]/span/span[2]/textarea').send_keys("Напуха лох")
 
 button = driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/button')
 driver.execute_script("arguments[0].click();", button)
