@@ -18,5 +18,5 @@ driver.execute_script("arguments[0].click();", button)
 
 
 soup = BeautifulSoup(driver.page_source, 'lxml')
-print(soup.textarea)
+print(soup.span)
 
