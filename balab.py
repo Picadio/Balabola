@@ -14,7 +14,8 @@ cl = driver.find_element_by_xpath('//*[@id="app"]/div/div/button').click()
 login = driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/div[3]/span/span[2]/textarea').send_keys("Привет как дела")
 
 button = driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/button')
-button.click()
+driver.execute_script("arguments[0].click();", button)
+
 
 soup = BeautifulSoup(driver.page_source, 'lxml')
 print(soup.textarea)
