@@ -7,7 +7,7 @@ from webdriver_manager.utils import ChromeType
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 
-driver.get('https://yandex.ru/lab/yalm')
+driver.get('https://yandex.ru/lab/yalm/share?id=b83977ab74487940e96ed1656188d484daa343f7fc79dd110495f5c21048b474')
 
 cl = driver.find_element_by_xpath('//*[@id="app"]/div/div/button').click()
 
