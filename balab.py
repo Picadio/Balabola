@@ -5,7 +5,7 @@ from selenium.webdriver import ActionChains
 from bs4 import BeautifulSoup
 
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome(ChromeDriverManager(chrome_type=ChromeType.GOOGLE).install())
 
 driver.get('https://yandex.ru/lab/yalm')
 
